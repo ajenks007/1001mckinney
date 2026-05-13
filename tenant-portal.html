@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenant Portal - 1001 McKinney</title>
+  <meta name="description" content="Your place for all things 1001 McKinney. Access documents, resources, and building contacts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a href="index.html">
+    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,4 116,60 60,116 4,60" fill="#111109" stroke="#c9a84c" stroke-width="3"/>
+      <text x="60" y="51" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+      <text x="60" y="66" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="8.5" font-weight="400" letter-spacing="3">McKINNEY</text>
+      <text x="60" y="79" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="3">HOUSTON</text>
+    </svg>
+  </a>
+  <div class="nav-links">
+    <a href="about.html">About the Building</a>
+    <a href="amenities.html">Building Amenities</a>
+    <a href="contact.html">Contact Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">x</button>
+  <a href="about.html">About the Building</a>
+  <a href="amenities.html">Building Amenities</a>
+  <a href="leasing.html">Leasing Opportunities</a>
+  <a href="tenant-portal.html">Tenant Portal</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('lounge.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Tenant Portal</h1>
+    <p>Your place for all things 1001</p>
+  </div>
+</section>
+
+<section class="section white" id="portalGate">
+  <div class="container">
+    <div class="portal-gate">
+      <span class="overline" style="display:block;font-size:0.63rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;">Tenants Only</span>
+      <h2>Welcome</h2>
+      <span class="gold-rule centered"></span>
+      <p style="max-width:460px;color:var(--text-mid);">This area is for 1001 McKinney tenants only. Please enter the portal password to access building resources and documents.</p>
+      <input type="password" id="portalPassword" placeholder="Enter password">
+      <p class="portal-error" id="portalError">Incorrect password. Please try again.</p>
+      <button class="btn btn-dark" onclick="checkPassword()">Access Portal</button>
+      <p style="font-size:0.78rem;color:var(--text-light);margin-top:1.5rem;">Need the password? <a href="contact.html" style="color:var(--gold);">Contact the management office.</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="portal-content" id="portalContent">
+  <section class="section white">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="overline">Tenant Resources</span>
+        <h2>Welcome</h2>
+        <span class="gold-rule centered"></span>
+        <p style="max-width:680px;margin:0 auto;">Below you will find everything you need to get the most out of 1001 McKinney. Need a parking application? We have you covered. Need the tenant handbook? Ditto. For anything else, reach out to our management office directly.</p>
+      </div>
+
+      <div class="doc-grid" style="margin-top:3rem;">
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          1001 McKinney Tenant Handbook
+        </a>
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Parking Application (Winpark)
+        </a>
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          McKinney Fitness Waiver
+        </a>
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Conference Room Reservation
+        </a>
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Submit a Maintenance Request
+        </a>
+        <a href="#" class="doc-link">
+          <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Move-In and Move-Out Procedures
+        </a>
+      </div>
+
+      <div style="margin-top:5rem;">
+        <div class="section-header">
+          <span class="overline">Who to Call</span>
+          <h3>Building Management Contacts</h3>
+          <span class="gold-rule"></span>
+        </div>
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <strong>TRC Capital Partners</strong>
+            <span class="role">Building Management, Suite 530</span>
+            <a href="tel:7133331001">713.333.1001</a>
+            <span class="note">Monday to Friday, 8am to 5pm. On-call after hours.</span>
+          </div>
+          <div class="contact-card">
+            <strong>Winpark Management</strong>
+            <span class="role">Parking Garage, Suite P1</span>
+            <span class="note">Located in the parking garage lobby.</span>
+          </div>
+          <div class="contact-card">
+            <strong>Lobby Ambassadors</strong>
+            <span class="role">Security, On Staff 24/7</span>
+            <span class="note">Security Director: Officer Albert Jones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,4 116,60 60,116 4,60" fill="#111109" stroke="#c9a84c" stroke-width="3"/>
+      <text x="60" y="51" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+      <text x="60" y="66" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="8.5" font-weight="400" letter-spacing="3">McKINNEY</text>
+      <text x="60" y="79" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="3">HOUSTON</text>
+    </svg>
+    <nav class="footer-nav">
+      <a href="about.html">About the Building</a>
+      <a href="amenities.html">Building Amenities</a>
+      <a href="leasing.html">Leasing Opportunities</a>
+      <a href="tenant-portal.html">Tenant Portal</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="footer-meta">1001 McKinney St, Houston, TX 77002 &nbsp;|&nbsp; 713.333.1001<br>&copy; 2025 1001 McKinney. Owned and managed by TRC Capital Partners.</div>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  function checkPassword() {
+    if (document.getElementById('portalPassword').value === '1001McKinney') {
+      document.getElementById('portalGate').style.display = 'none';
+      document.getElementById('portalContent').classList.add('unlocked');
+    } else {
+      document.getElementById('portalError').style.display = 'block';
+    }
+  }
+  document.getElementById('portalPassword').addEventListener('keypress', e => { if(e.key==='Enter') checkPassword(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Amenities - 1001 McKinney</title>
+  <meta name="description" content="1001 McKinney combines historic design with modern workplace amenities including a fitness center, tenant lounge, tunnel access, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a href="index.html">
+    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,4 116,60 60,116 4,60" fill="#111109" stroke="#c9a84c" stroke-width="3"/>
+      <text x="60" y="51" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+      <text x="60" y="66" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="8.5" font-weight="400" letter-spacing="3">McKINNEY</text>
+      <text x="60" y="79" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="3">HOUSTON</text>
+    </svg>
+  </a>
+  <div class="nav-links">
+    <a href="about.html">About the Building</a>
+    <a href="amenities.html" class="active">Building Amenities</a>
+    <a href="contact.html">Contact Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">x</button>
+  <a href="about.html">About the Building</a>
+  <a href="amenities.html">Building Amenities</a>
+  <a href="leasing.html">Leasing Opportunities</a>
+  <a href="tenant-portal.html">Tenant Portal</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('lounge.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Building Amenities</h1>
+    <p>Historic architecture. Modern conveniences. Everything your team needs to thrive.</p>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="overline">What We Offer</span>
+      <h2>World-Class Amenities in a Historic Setting</h2>
+      <span class="gold-rule centered"></span>
+      <p style="max-width:640px;margin:0 auto;">From the moment you arrive to the moment you leave, every detail at 1001 McKinney is designed to make your workday exceptional.</p>
+    </div>
+    <div class="amenity-grid" style="margin-top:3rem;">
+      <div class="amenity-card">
+        <h3>On-Site Fitness Center</h3>
+        <p>McKinney Fitness offers treadmills, weight machines, showers, and a private dressing room with towel service, steps from your office.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>Tenant Lounge and Coffee</h3>
+        <p>The 5th floor Tenant Lounge features a premium gourmet coffee machine available 24 hours a day, 7 days a week, free of charge to all tenants.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>777-Space Parking Garage</h3>
+        <p>Directly connected via a 6th floor skybridge with keyless entry. Reserved and covered spaces available. Managed by Winpark Management.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>24/7 Secure Keycard Access</h3>
+        <p>Lobby Ambassadors on staff around the clock, led by Security Director Officer Albert Jones. Your team and your assets are always protected.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>Downtown Tunnel Access</h3>
+        <p>Direct elevator and escalator access to 95 blocks of Houston's underground tunnel system with nearly 400,000 sq ft of retail and dining.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>Conference Facility</h3>
+        <p>A boardroom-quality conference center with reception and catering options, available to all tenants for presentations and client meetings.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>Full-Service Car Detailing</h3>
+        <p>A full-service car detailer operates directly in the parking garage, so your vehicle is cared for while you focus on business.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>On-Site Retail Services</h3>
+        <p>A bank, jeweler, printer, and hairstylist are all located in the tunnel-level retail: 11,156 sq ft of convenience below the building.</p>
+      </div>
+      <div class="amenity-card">
+        <h3>Morton's The Steakhouse</h3>
+        <p>Fine dining with a speakeasy-like atmosphere, right in the building lobby. Business lunches, client dinners, and after-work celebrations alike.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO SPLIT: LOBBY -->
+<div class="photo-split">
+  <div class="photo-split-content">
+    <span class="overline" style="display:block;font-size:0.63rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;">2020 Renovation</span>
+    <h2>Six Modernized Elevators</h2>
+    <span class="gold-rule"></span>
+    <p>All six elevators were fully modernized in 2020. Press the antique-brass call button and arrive in style, a perfect blend of historic character and modern efficiency that greets your team and clients every single day.</p>
+    <p>The renovation, led by Gensler Houston, also introduced a new canopy over the McKinney Street entrance, additional lobby windows, custom rugs, new furniture, and upgraded finishes throughout all common corridors.</p>
+    <a href="about.html" class="btn btn-ghost" style="margin-top:1.5rem;">Read Our History</a>
+  </div>
+  <div class="photo-split-img" style="background-image: url('lobby.png');"></div>
+</div>
+
+<section class="section cream">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="overline">Location</span>
+      <h2>Unbeatable Downtown Position</h2>
+      <span class="gold-rule centered"></span>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="feature-label">Transit</span>
+        <h3>METRORail Red Line</h3>
+        <p>A METRORail station sits immediately outside the building, making commutes across greater Houston effortless for your entire team.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-label">Dining</span>
+        <h3>100+ Nearby Restaurants</h3>
+        <p>Over 100 restaurants within a mile, including fine dining at Morton's in the lobby and dozens of quick options through the tunnel system.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-label">Hospitality</span>
+        <h3>27 Hotels Within a Mile</h3>
+        <p>Le Meridien, Hotel Alessandra, and the JW Marriott are all within two blocks, ideal for out-of-town clients and guests.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-label">Walkability</span>
+        <h3>Walk Score: 97</h3>
+        <p>Rated a Walker's Paradise with a Transit Score of 88 and Bike Score of 80. In 2023, seven blocks of Main Street became a dedicated pedestrian promenade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>See These Amenities for Yourself</h2>
+    <a href="contact.html" class="btn btn-gold">Schedule a Tour</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,4 116,60 60,116 4,60" fill="#111109" stroke="#c9a84c" stroke-width="3"/>
+      <text x="60" y="51" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+      <text x="60" y="66" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="8.5" font-weight="400" letter-spacing="3">McKINNEY</text>
+      <text x="60" y="79" text-anchor="middle" fill="#c9a84c" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="3">HOUSTON</text>
+    </svg>
+    <nav class="footer-nav">
+      <a href="about.html">About the Building</a>
+      <a href="amenities.html">Building Amenities</a>
+      <a href="leasing.html">Leasing Opportunities</a>
+      <a href="tenant-portal.html">Tenant Portal</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="footer-meta">1001 McKinney St, Houston, TX 77002 &nbsp;|&nbsp; 713.333.1001<br>&copy; 2025 1001 McKinney. Owned and managed by TRC Capital Partners.</div>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+  document.querySelectorAll('.amenity-card,.feature-item').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
