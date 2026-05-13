@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - 1001 McKinney</title>
+  <meta name="description" content="Are you interested in leasing office space in 1001 McKinney? Contact our team here if you have any questions. We look forward to speaking with you!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-diamond">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,4 116,60 60,116 4,60" fill="#1a1a0e" stroke="#c9a84c" stroke-width="3"/>
+          <text x="60" y="52" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+          <text x="60" y="67" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="9" font-weight="400" letter-spacing="3">McKINNEY</text>
+          <text x="60" y="80" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="7" letter-spacing="3">HOUSTON</text>
+        </svg>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html">About the Building</a>
+      <a href="amenities.html">Building Amenities</a>
+      <a href="contact.html" style="color:var(--gold)">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="about.html">About the Building</a>
+      <a href="amenities.html">Building Amenities</a>
+      <a href="leasing.html">Leasing Opportunities</a>
+      <a href="tenant-portal.html">Tenant Portal</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1800&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Get in Touch with Us</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="content-section alt">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <h2>We Look Forward to Speaking with You.</h2>
+          <div class="gold-divider" style="margin: 1rem 0 1.5rem;"></div>
+          <p>1001 McKinney offers you a place to grow your business and somewhere you'd be proud to show off to your clients. If you're interested in leasing office space in 1001 McKinney or would like more information about the building, amenities or available spaces, please fill out our short form and one of our team members will reach out to you as soon as possible.</p>
+
+          <form id="contactForm" style="margin-top: 2rem;">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" name="first_name" required placeholder="Jane">
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label>
+                <input type="text" name="last_name" required placeholder="Smith">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Company *</label>
+              <input type="text" name="company" required placeholder="Acme Corp">
+            </div>
+            <div class="form-group">
+              <label>Work Email *</label>
+              <input type="email" name="email" required placeholder="jane@acmecorp.com">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="(713) 555-0100">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Desired Move-In Date</label>
+                <input type="date" name="move_in">
+              </div>
+              <div class="form-group">
+                <label>Number of Employees</label>
+                <select name="employees">
+                  <option value="">Select...</option>
+                  <option>1–10</option>
+                  <option>11–25</option>
+                  <option>26–50</option>
+                  <option>51–100</option>
+                  <option>100+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell us about your space needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark" style="width:100%; text-align:center; margin-top:0.5rem;">Send Message</button>
+          </form>
+
+          <div id="formSuccess" style="display:none; padding: 2rem; background: rgba(201,168,76,0.1); border-left: 3px solid var(--gold); margin-top: 1.5rem;">
+            <h3 style="color: var(--gold);">Thanks for your message!</h3>
+            <p>Someone from the 1001 team will reach out to you shortly.</p>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h3>Contact Our Leasing Team</h3>
+          <div class="gold-divider" style="margin: 1rem 0 1.5rem;"></div>
+          <p>If you prefer email or phone, feel free to contact one of our associates directly and they'd be happy to assist you. We look forward to speaking with you!</p>
+
+          <div class="contact-broker">
+            <strong>Jason Presley</strong>
+            <span style="font-size:0.78rem; color: var(--text-light); display:block; margin-bottom:0.8rem;">CBRE</span>
+            <a href="mailto:jason.presley@cbre.com" style="display:block; font-size:0.88rem; color: var(--gold); margin-bottom:0.4rem;">jason.presley@cbre.com</a>
+            <a href="tel:7135771872" style="display:block; font-size:0.88rem; color: var(--text-light);">713.577.1872</a>
+          </div>
+
+          <div style="margin-top: 3rem;">
+            <h3>Visit Us</h3>
+            <div class="gold-divider" style="margin: 1rem 0 1.5rem;"></div>
+            <p style="font-size:0.9rem;">1001 McKinney Street<br>Houston, TX 77002</p>
+            <a href="https://maps.google.com/?q=1001+McKinney+St+Houston+TX" target="_blank" class="btn btn-outline" style="margin-top:1rem; font-size:0.72rem;">Get Directions &rarr;</a>
+          </div>
+
+          <div style="margin-top: 3rem; padding: 1.5rem; background: var(--dark); color: var(--cream);">
+            <h3 style="color: var(--gold); margin-bottom:1rem; font-size:1.1rem;">Building Hours</h3>
+            <div style="font-size:0.85rem; line-height:2; color:rgba(247,244,238,0.75);">
+              <div style="display:flex; justify-content:space-between;"><span>Monday – Friday</span><span>6:00 am – 7:00 pm</span></div>
+              <div style="display:flex; justify-content:space-between;"><span>Keycard Access</span><span>24/7</span></div>
+              <div style="display:flex; justify-content:space-between;"><span>Security</span><span>24/7</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="80">
+          <polygon points="60,4 116,60 60,116 4,60" fill="#1a1a0e" stroke="#c9a84c" stroke-width="3"/>
+          <text x="60" y="52" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="11" font-weight="600" letter-spacing="2">1001</text>
+          <text x="60" y="67" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="9" font-weight="400" letter-spacing="3">McKINNEY</text>
+          <text x="60" y="80" text-anchor="middle" fill="#c9a84c" font-family="Montserrat" font-size="7" letter-spacing="3">HOUSTON</text>
+        </svg>
+      </div>
+      <nav class="footer-nav">
+        <a href="about.html">About the Building</a>
+        <a href="amenities.html">Building Amenities</a>
+        <a href="leasing.html">Leasing Opportunities</a>
+        <a href="tenant-portal.html">Tenant Portal</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <p class="footer-address">1001 McKinney St, Houston, TX 77002</p>
+      <p class="footer-copy">&copy; 2025 1001 McKinney. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
